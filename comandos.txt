@@ -1,0 +1,11 @@
+Gerando a imagem laravel:
+    docker build -t strolker/laravel:latest .
+    docker run -dit --name laravel -p 8000:8000 strolker/laravel
+
+
+Gerando a imagem node:
+    docker build -t strolker/hello-node:latest
+    docker run -p 3000:3000 strolker/hello-node:latest
+
+Se precisar subir pro docker hub:
+    docker push (Nome da imagem)strolker/hello-node:latest 
